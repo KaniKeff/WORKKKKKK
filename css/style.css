@@ -1,3 +1,73 @@
 body{
+    margin: 0 18px;
+}
+ul{
     margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav_background{
+    border-bottom: 5px rgb(0, 0, 0) solid;
+}
+.nav_inline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 20px 5%;
+    background-color: rgba(196, 185, 185, 0.33);
+    z-index: 2;
+}
+.nav_inline h1{
+    margin: 0;
+    color: rgb(10, 148, 129);
+}
+.List li{
+    margin: 0 20px;
+}
+.List{
+    display: flex;
+}
+.List li a{
+    color: rgb(10, 148, 129);
+    text-decoration: none;
+    font-weight: 500;
+}
+.List li a:hover{
+    text-decoration: underline;
+}
+.nav_inline input{
+    border: 15px;
+    outline: 0;
+    padding: 8px 5px;
+    background-color: rgb(10, 148, 129);
+}
+.Icon{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    padding-top: 8px;
+}
+.Icon li{
+    margin: 0 20px;
+}
+.burger{
+    color: purple;
+    font-size: 20px;
+    display: none;
+}
+@media  screen and (max-width: 762px) {
+    .List{
+        display: none;
+    }
+    .nav_inline input{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .Icon{
+        display: none;
+    }
 }
